@@ -10,4 +10,5 @@ return [
         'postalCode' => '236001',
         'addressLocality' => 'г.Калининград'
     ],
+    'GoogleAnalyticAPI' => 'null',
 ];

@@ -1,5 +1,68 @@
-main > .container {
-    padding: 70px 15px 20px;
+html,
+body {
+    /*font-family: 'Open Sans', sans-serif;*/
+    font-family: 'PT Sans Caption', 'Verdana', 'Dejavu', 'Sans', sans-serif;
+    font-weight: 400;
+    color: #666;
+    font-size: 12px;
+    line-height: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    /*background: #4f85a5;*/
+    --main-light2-color: #3dc7ff;
+    --main-light1-color: #34a0cf;
+    --main-nav-color: #229ac8;
+    --main-dark1-color: #2980a5;
+    --main-dark2-color: #226b8a;
+    --seach-menu-color: #f8e173;
+}
+
+
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    background-color: #303030;
+    /*border-top: 1px solid #ddd;*/
+    color: #e2e2e2;
+}
+
+footer hr {
+    border-top: none;
+    border-bottom: 1px solid #666;
+}
+
+footer a,footer a h3 {
+    color: #ccc;
+}
+
+footer a h3 {
+    line-height: 20px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+
+
+footer a:hover, footer a h3:hover {
+    color: #fff;
+}
+
+footer h5 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+}
+
+a {
+    color: var(--main-nav-color);
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--main-dark2-color);
 }
 
 .footer {

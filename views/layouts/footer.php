@@ -15,29 +15,21 @@ use yii\helpers\Url; ?>
                 </ul>
             </div>
 
-            <div class="col-sm-43">
+            <div class="col-sm-4">
 
             </div>
             <div class="col-sm-4">
                 <label class="footer-title">Услуги</label>
                 <ul class="list-unstyled">
-                    <li><a href="<?= Url::to(['/cars']) ?>"><h3>Разработка СРМ</h3></a></li>
-                    <li><a href="<?= Url::to(['/tours']) ?>"><h3>Порталы</h3></a></li>
+                    <li><a href="<?= Url::to(['/crm']) ?>"><h3>Разработка СРМ</h3></a></li>
+                    <li><a href="<?= Url::to(['/portal']) ?>"><h3>Порталы</h3></a></li>
+                    <li><a href="<?= Url::to(['/shops']) ?>"><h3>Магазины</h3></a></li>
                 </ul>
             </div>
         </div>
         <hr>
-        <div class="float-right d-none d-sm-inline">
-            <?= Html::a('Стать Провайдером услуг', \Yii::$app->params['adminHostInfo'], ['rel' => 'nofollow']) ?>
-        </div>
         <p>
-            <a href="https://www.instagram.com/koenigs.ru" target="_blank" rel="nofollow">
-                <img src="https://static.koenigs.ru/cache/files_contacts/list_3.png" alt="Инстаграм koenigs.ru" title="Инстаграм koenigs.ru" width="20px" height="20px"/> koenigs.ru
-            </a>
-            <a href="https://vk.com/koenigsru" target="_blank"  rel="nofollow">
-                <img src="https://static.koenigs.ru/cache/files_contacts/list_4.png" alt="Вконтакте koenigs.ru" title="Вконтакте koenigs.ru" width="20px" height="20px"/> koenigsru
-            </a>
-            <?= Lang::t('Разработано') ?> <a href="mailto:koenigs.ru@gmail.com"
+            Разработано <a href="mailto:koenigs.ru@gmail.com"
                                              target="_blank" rel="=nofollow">ООО Кёнигс.РУ</a>
             &copy; 2020-<?= date('Y', time())?> Все права защищены
         </p>

@@ -12,10 +12,24 @@ $config = [
         '@npm'   => '@vendor/npm-asset',
     ],
     'components' => [
+        'assetManager' => [
+            'appendTimestamp' => true,
+            'bundles' => [
+                'yii\bootstrap\BootstrapAsset' => [
+                    'class' => 'yii\bootstrap4\BootstrapAsset',
+                    /*  'css' => [
+                          'css/bootstrap.min.css',
+                      ],*/
+                ],
+                'yii\bootstrap\BootstrapPluginAsset' => [
+                    'class' => 'yii\bootstrap4\BootstrapPluginAsset'
+                ]
+            ],
+        ],
         'request' => [
             // !!! insert a secret key in the following (if it is empty) - this is required by cookie validation
             'cookieValidationKey' => '036f2e4fdf7e62587ee18e02a36e88b2',
-            
+
         ],
         'cache' => [
             'class' => 'yii\caching\FileCache',
