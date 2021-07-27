@@ -145,3 +145,98 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+
+.item-responsive {
+    position: relative; /* относительное позиционирование */
+    /*margin-bottom: 0.5rem;
+    border: white solid 2px;*/
+}
+.item-responsive:before {
+    display: block; /* отображать элемент как блок */
+    content: ""; /* содержимое псевдоэлемента */
+    width: 100%; /* ширина элемента */
+}
+
+.item-responsive>.content-item {
+    position: absolute; /* абсолютное положение элемент */
+    /* положение элемента */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.item-2-29by1 {
+    padding-top: 43.5%; /* (1:2)*100% */
+}
+.item-post {
+    padding-top: 75.18%; /* (1:1.33)*100% */
+}
+.item-2-0by1 {
+    padding-top: 50.00%; /* (1:2)*100% */
+}
+.item-3-0by1 {
+    padding-top: 33.33%; /* (1:3)*100% */
+}
+
+.item-2-0by3 {
+    padding-top: 66.67%; /* (2:3)*100% */
+}
+.item-4-3by1 {
+    padding-top: 23.26%; /* (1:2)*100% */
+}
+.item-2-80by1 {
+    padding-top: 35.71%; /* (1:2)*100% */
+}
+.item-moving {
+    padding-top: 23.25%; /* (1:2)*100% */
+}
+
+.item-0-67by1 {
+    padding-top: 149.25%; /* (1:2)*100% */
+}
+.item-1-1by1 {
+    padding-top: 100%; /* (1:1)*100% */
+}
+
+.item-0-75by1-2 {
+    padding-top: 136.33%; /* (1:2)*100% */
+}
+
+.item-0-75by1 {
+    padding-top: 133.33%; /* (1:2)*100% */
+}
+
+.content-container {
+    /* background: #ffffff;*/
+}
+
+.landing-h1 {
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 72px !important;
+    color: #FFF !important;
+    margin-bottom: 17px;
+    font-family: 'PT Sans Caption', 'Verdana','Dejavu','Sans', sans-serif;
+}
+
+.landing-h1-mobile {
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 22px !important;;
+    color: #FFF !important;
+    margin-bottom: 17px;
+    font-family: 'PT Sans Caption', 'Verdana','Dejavu','Sans', sans-serif;
+    text-align: center !important;;
+}
+.landing-h2 {
+    text-shadow: 1px 1px 2px black, 0 0 1em black;
+    font-size: 24px;
+    font-weight: 300;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    display: inline-flex;
+    align-items: center;
+    color: white;
+}

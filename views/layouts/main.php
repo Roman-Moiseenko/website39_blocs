@@ -79,7 +79,7 @@ AppAsset::register($this);
 
 
 <main role="main" class="flex-shrink-0">
-    <div class="container">
+    <div class="content-container">
         <?= \yii\widgets\Breadcrumbs::widget([
             'options' => ['class' => 'breadcrumb-site'],
             'homeLink' => [
