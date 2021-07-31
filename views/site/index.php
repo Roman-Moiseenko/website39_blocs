@@ -25,9 +25,9 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
                 <div class="col-md-6">
                     <h2>Разработка сайта компании</h2>
                     <ul class="list-landing">
-                        <li>функционал под специфику Вашего бизнеса</li>
-                        <li>Удобный и интуитивно понятный интерфейс</li>
-                        <li>Мобильная версия</li>
+                        <h3>Функционал под специфику Вашего бизнеса</h3>
+                        <h3>Удобный и интуитивно понятный интерфейс</h3>
+                        <h3>Мобильная версия Вашего сайта</h3>
                     </ul>
                 </div>
                 <div class="col-md-6">IMG</div>
@@ -42,7 +42,7 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
                     <h2>Разработка CRM-систем</h2>
                     <ul class="list-landing">
                         <li>Создание закрытых CRM-систем</li>
-                        <li>Функционал любо сложности</li>
+                        <li>Функционал любой сложности</li>
                         <li>Срок разработки от 2 до 6 месяцев</li>
                     </ul>
                 </div>
@@ -54,7 +54,10 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
             <div class="row">
                 <div class="col-md-6">
                     <h2>Подключение онлайн-платежей</h2>
-                    (ЮКасса)
+                    <ul class="list-landing">
+                        <li>Подключим Ю-Кассу</li>
+                        <li>Настроим отчетность интернет платежей</li>
+                    </ul>
                 </div>
                 <div class="col-md-6">IMG</div>
             </div>
@@ -65,7 +68,7 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
             <div class="row">
                 <div class="col-md-6">IMG</div>
                 <div class="col-md-6">
-                    <h2>Функционал сайта</h2>
+                    <h2>Расширенный Функционал сайта</h2>
                     СМС и другие функции
                 </div>
             </div>
