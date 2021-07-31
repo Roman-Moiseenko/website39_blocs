@@ -5,28 +5,6 @@ use yii\helpers\Url; ?>
 
 <footer class="pb-2">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <label class="footer-title">Информация</label>
-                <ul class="list-unstyled">
-                    <li><a href="<?= Html::encode(Url::to(['/about'])) ?>">О сайте</a></li>
-                    <li><a href="<?= Html::encode(Url::to(['/contacts'])) ?>" rel="nofollow">Контакты</a></li>
-                    <li><a href="<?= Html::encode(Url::to(['/projects'])) ?>">Наши проекты</a></li>
-                </ul>
-            </div>
-
-            <div class="col-sm-4">
-
-            </div>
-            <div class="col-sm-4">
-                <label class="footer-title">Услуги</label>
-                <ul class="list-unstyled">
-                    <li><a href="<?= Url::to(['/crm']) ?>"><h3>Разработка СРМ</h3></a></li>
-                    <li><a href="<?= Url::to(['/portal']) ?>"><h3>Порталы</h3></a></li>
-                    <li><a href="<?= Url::to(['/shops']) ?>"><h3>Магазины</h3></a></li>
-                </ul>
-            </div>
-        </div>
         <hr>
         <p>
             Разработано <a href="mailto:koenigs.ru@gmail.com"
@@ -40,7 +18,7 @@ use yii\helpers\Url; ?>
                     <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
                         <link itemprop="contentUrl" href="<?= \Yii::$app->params['hostInfo'] . '/images/logo-admin.jpg'; ?>" />
                     </div>
-                    <span itemprop="name">ООО "Кёнигс.РУ"</span>
+                    <meta itemprop="name" content="ООО Кёнигс.РУ">
                     <div itemprop="address" itemscope="" itemtype="https://schema.org/PostalAddress">
                         <meta itemprop="streetAddress" content="<?= \Yii::$app->params['address']['streetAddress'] ?>">
                         <meta itemprop="postalCode" content="<?= \Yii::$app->params['address']['postalCode'] ?>">

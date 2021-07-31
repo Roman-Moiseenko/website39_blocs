@@ -38,7 +38,7 @@ AppAsset::register($this);
     <?php $this->registerCsrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
-
+    <meta name="yandex-verification" content="a41f93f3452930c1" />
     <script src="/js/lazysizes.min.js"></script>
     <script defer type="text/javascript">
         var fired = false;
@@ -54,7 +54,7 @@ AppAsset::register($this);
                         k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
                     })
                     (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-                    ym(90000000, "init", {
+                    ym(83396419, "init", {
                         clickmap: true,
                         trackLinks: true,
                         accurateTrackBounce: true
@@ -69,7 +69,7 @@ AppAsset::register($this);
             }
         });
     </script>
-    <div><img src="https://mc.yandex.ru/watch/90000000" style="position:absolute; left:-9999px;" alt="Яндекс Метрика"/></div>
+    <div><img src="https://mc.yandex.ru/watch/83396419" style="position:absolute; left:-9999px;" alt="Яндекс Метрика"/></div>
     <script defer src="https://www.googletagmanager.com/gtag/js?id=<?= \Yii::$app->params['GoogleAnalyticAPI'] ?>"></script>
 
 </head>
