@@ -1,5 +1,5 @@
 <?php
-
+namespace engine\service;
 
 use yii\mail\MailerInterface;
 
@@ -10,16 +10,16 @@ class ContactService
      */
     private $mailer;
 
-    public function __construct(MailerInterface $mailer)
+    public function __construct()
     {
-        $this->mailer = $mailer;
+        $this->mailer = \Yii::$app->mailer;
     }
     public function sendRequest($name, $phone) //Заявка на разработку сайта
     {
 
-        $send = $this->mailer->compose('lockObject', ['name' => $name, 'phone' => $phone])
+        $send = $this->mailer->compose('sendRequest', ['name' => $name, 'phone' => $phone])
             ->setTo(\Yii::$app->params['emailRequest'])
-            ->setFrom([\Yii::$app->params['supportEmail'] => 'Блокировка'])
+            ->setFrom([\Yii::$app->params['supportEmail'] => 'Разработка'])
             ->setSubject('Заявка на разработку сайта')
             ->send();
         if (!$send) {

@@ -1,6 +1,6 @@
 <?php
 
-
+namespace engine\service;
 use app\models\Request;
 
 class RequestService
@@ -10,9 +10,9 @@ class RequestService
      */
     private $contactService;
 
-    public function __construct(ContactService $contactService)
+    public function __construct()
     {
-        $this->contactService = $contactService;
+        $this->contactService = new ContactService();
     }
 
     public function create(Request $form)

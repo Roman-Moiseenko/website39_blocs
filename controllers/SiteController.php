@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use app\models\Request;
+use engine\service\RequestService;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -19,10 +19,10 @@ class SiteController extends Controller
      */
     private $service;
 
-    public function __construct($id, $module, \RequestService $service, $config = [])
+    public function __construct($id, $module, $config = [])
     {
         parent::__construct($id, $module, $config);
-        $this->service = $service;
+        $this->service = new RequestService();
     }
 
     /**
@@ -77,7 +77,7 @@ class SiteController extends Controller
         $form = new Request();
         if ($form->load(\Yii::$app->request->post()) && $form->validate()) {
             try {
-                $result = $this->service->create($form);
+                $this->service->create($form);
 
             } catch (\DomainException $e) {
                 \Yii::$app->errorHandler->logException($e);
