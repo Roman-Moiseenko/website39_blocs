@@ -1,5 +1,6 @@
 <?php
-namespace engine\service;
+namespace app\commands;
+
 
 use yii\mail\MailerInterface;
 

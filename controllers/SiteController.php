@@ -2,7 +2,8 @@
 
 namespace app\controllers;
 
-use engine\service\RequestService;
+
+use app\commands\RequestService;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
