@@ -142,7 +142,7 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
                         'enableClientValidation' => false,
                     ]); ?>
                     <?= $form->field($model, 'name')
-                        ->textInput(['autofocus' => true, 'placeholder' => 'Ваше имя'])
+                        ->textInput(['placeholder' => 'Ваше имя'])
                         ->label(false) ?>
                     <?= $form->field($model, 'phone')
                         ->textInput(['placeholder' => 'Телефон'])
