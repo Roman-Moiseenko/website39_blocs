@@ -96,6 +96,21 @@ AppAsset::register($this);
 <?= $this->render('footer') ?>
 
 <?php $this->endBody() ?>
+<script type="text/javascript">
+    let giftofspeed1 = document.createElement('link');
+    giftofspeed1.rel = 'stylesheet';
+    giftofspeed1.href = 'https://fonts.googleapis.com/css?family=Open+Sans:400,400i,300,700&display=swap';
+    giftofspeed1.type = 'text/css';
+    let godefer1 = document.getElementsByTagName('link')[0];
+    godefer1.parentNode.insertBefore(giftofspeed1, godefer1);
+
+    let giftofspeed2 = document.createElement('link');
+    giftofspeed2.rel = 'stylesheet';
+    giftofspeed2.href = 'https://use.fontawesome.com/releases/v5.15.1/css/all.css';
+    giftofspeed2.type = 'text/css';
+    let godefer2 = document.getElementsByTagName('link')[0];
+    godefer2.parentNode.insertBefore(giftofspeed2, godefer2);
+</script>
 </body>
 </html>
 <?php $this->endPage() ?>

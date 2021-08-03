@@ -120,8 +120,8 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
             </div>
         </div>
     </div>
-    <hr/>
-    <div class="card mt-4 p-2" style="border-radius: 40px;">
+
+    <!--div class="card mt-4 p-2" style="border-radius: 40px;">
         <div class="card-body">
             <div class="row">
                 <div class="col-md-12">
@@ -129,14 +129,15 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
                 </div>
             </div>
         </div>
-    </div>
+    </div-->
     <hr/>
     <div class="card mt-4 p-2" style="border-radius: 40px;">
         <div class="card-body">
             <div class="row">
-                <div class="col-md-12  block-main" style="text-align: center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4  block-main" style="text-align: center">
                     <h2>Заказать сайт</h2>
-                    <label>Оставьте заявку на разработку сайта:</label>
+
                     <?php $form = ActiveForm::begin([
                         'enableClientValidation' => false,
                     ]); ?>
@@ -147,11 +148,10 @@ $this->registerMetaTag(['name' => 'og:description', 'content' => $description]);
                         ->textInput(['placeholder' => 'Телефон'])
                         ->label(false) ?>
 
-                    <h3>Мы Вам </h3>
                     <div class="form-group">
                         <div class="d2-btn-box">
                             <button class="d2-btn d2-btn-lg d2-btn-block d2-btn-main" type="submit" name="login-button">
-                                <div class="d2-btn-caption">Оставить заявку</div>
+                                <div class="d2-btn-caption">Отправить заявку</div>
                                 <div class="d2-btn-icon">
                                     <i class="far fa-paper-plane"></i>
                                 </div>

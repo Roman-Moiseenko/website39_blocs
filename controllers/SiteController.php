@@ -13,6 +13,18 @@ use app\models\ContactForm;
 
 class SiteController extends Controller
 {
+
+    /**
+     * @var \RequestService
+     */
+    private $service;
+
+    public function __construct($id, $module, \RequestService $service, $config = [])
+    {
+        parent::__construct($id, $module, $config);
+        $this->service = $service;
+    }
+
     /**
      * {@inheritdoc}
      */
@@ -20,7 +32,7 @@ class SiteController extends Controller
     {
         return [
             'access' => [
-                'class' => AccessControl::className(),
+                'class' => AccessControl::class,
                 'only' => ['logout'],
                 'rules' => [
                     [
@@ -31,7 +43,7 @@ class SiteController extends Controller
                 ],
             ],
             'verbs' => [
-                'class' => VerbFilter::className(),
+                'class' => VerbFilter::class,
                 'actions' => [
                     'logout' => ['post'],
                 ],
@@ -63,6 +75,14 @@ class SiteController extends Controller
     public function actionIndex()
     {
         $form = new Request();
+        if ($form->load(\Yii::$app->request->post()) && $form->validate()) {
+            try {
+                $result = $this->service->create($form);
+
+            } catch (\DomainException $e) {
+                \Yii::$app->errorHandler->logException($e);
+            }
+        }
         return $this->render('index', [
             'model' => $form
         ]);
