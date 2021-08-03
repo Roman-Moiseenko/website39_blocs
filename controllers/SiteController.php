@@ -4,6 +4,7 @@ namespace app\controllers;
 
 
 use app\commands\RequestService;
+use app\models\Request;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -79,13 +80,18 @@ class SiteController extends Controller
         if ($form->load(\Yii::$app->request->post()) && $form->validate()) {
             try {
                 $this->service->create($form);
-
+                $form = new Request();
+                return $this->render('index', [
+                    'model' => $form,
+                    'success' => true,
+                ]);
             } catch (\DomainException $e) {
                 \Yii::$app->errorHandler->logException($e);
             }
         }
         return $this->render('index', [
-            'model' => $form
+            'model' => $form,
+            'success' => false,
         ]);
     }
 

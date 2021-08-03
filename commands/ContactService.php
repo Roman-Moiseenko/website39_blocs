@@ -20,7 +20,7 @@ class ContactService
 
         $send = $this->mailer->compose('sendRequest', ['name' => $name, 'phone' => $phone])
             ->setTo(\Yii::$app->params['emailRequest'])
-            ->setFrom([\Yii::$app->params['supportEmail'] => 'Разработка'])
+            ->setFrom([\Yii::$app->params['senderEmail'] => 'Разработка'])
             ->setSubject('Заявка на разработку сайта')
             ->send();
         if (!$send) {
