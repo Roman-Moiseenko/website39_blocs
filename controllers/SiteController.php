@@ -93,7 +93,7 @@ class SiteController extends Controller
         }
         $mobile = SysHelper::isMobile();
         $sections = Section::base();
-        return $this->render($mobile ? 'index_mobile' : 'index', [
+        return $this->render($mobile ? 'index_mobile' : 'index_desctop', [
             'model' => $form,
             'success' => false,
             'sections' => $sections,
