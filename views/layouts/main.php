@@ -26,8 +26,6 @@ AppAsset::register($this);
     <meta property="og:locale" content="ru_RU">
     <meta property="og:title" content="<?= Html::encode($this->title) ?>">
     <meta property="og:image" content="<?= \Yii::$app->params['hostInfo'] . '/images/logo-admin.jpg' ?>">
-    <meta property="og:url" content="<?= \Yii::$app->params['hostInfo'] ?>">
-
     <?php if (isset($this->params['canonical'])) {
         echo '<meta property="og:url" content="' . $this->params['canonical'] . '">' . PHP_EOL;
         echo '<link rel="canonical" href="' . $this->params['canonical'] . '">' . PHP_EOL;
@@ -37,7 +35,6 @@ AppAsset::register($this);
     }?>
 
     <?php $this->registerCsrfMetaTags() ?>
-    <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
     <meta name="yandex-verification" content="a41f93f3452930c1" />
     <script src="/js/lazysizes.min.js"></script>
