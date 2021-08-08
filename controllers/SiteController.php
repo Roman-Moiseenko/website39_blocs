@@ -5,6 +5,8 @@ namespace app\controllers;
 
 use app\commands\RequestService;
 use app\models\Request;
+use app\models\Section;
+use app\models\SysHelper;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -89,9 +91,12 @@ class SiteController extends Controller
                 \Yii::$app->errorHandler->logException($e);
             }
         }
-        return $this->render('index', [
+        $mobile = SysHelper::isMobile();
+        $sections = Section::base();
+        return $this->render($mobile ? 'index_mobile' : 'index', [
             'model' => $form,
             'success' => false,
+            'sections' => $sections,
         ]);
     }
 
